@@ -1,0 +1,3 @@
+argini @ git+https://github.com/ukyouz/py-argini@70afe14351ecddcb3c4990ac97d53e25e1eb0e80
+C_DefineParser @ git+https://github.com/ukyouz/C-define-Parser@b5e8334f654336b72f33a2133ea2f83a8c1162ca
+tree-sitter==0.21.3
