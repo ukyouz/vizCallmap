@@ -7,11 +7,11 @@ import C_DefineParser
 from tree_sitter import Language
 from tree_sitter import Node
 from tree_sitter import Parser
+import tree_sitter_c
 
 
-parser = Parser()
-C_LANGUAGE = Language(Path(__file__).parent / "treesitter/treesitter_c.so", "c")
-parser.set_language(C_LANGUAGE)
+C_LANGUAGE = Language(tree_sitter_c.language())
+parser = Parser(C_LANGUAGE)
 
 
 @lru_cache
