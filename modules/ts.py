@@ -24,7 +24,7 @@ def remove_if_0(source: str, filename="") -> str:
 
     fs = io.StringIO(source)
     fs.name = filename
-    for _, line_no in p.read_file_lines(fs, try_if_else=True, reserve_whitespace=True, include_block_comment=True):
+    for _, line_no in p.read_file_lines(fs, try_if_else=True, reserve_whitespace=True):
         hidden_linenos.remove(line_no - 1)
 
     for line_no in hidden_linenos:
